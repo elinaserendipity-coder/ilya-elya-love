@@ -1,0 +1,53 @@
+<div class="hearts">
+    ❤️ 💕 ❤️ 💗 💕 ❤️
+</div>
+
+<div class="container">
+
+    <h1 class="header_text">
+        Илюш, ты меня любишь? ❤️
+    </h1>
+
+    <div class="photo_container">
+        <img src="photo1.jpg" alt="Мы ❤️">
+    </div>
+
+    <div class="buttons">
+
+        <button
+            class="btn yes_btn"
+            onclick="nextPage()">
+            Да ❤️
+        </button>
+
+        <button
+            class="btn no_btn"
+            id="noButton"
+            onmouseover="moveButton()"
+            onclick="moveButton()">
+            Нет 😈
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+    function nextPage() {
+        window.location.href = "yes.html";
+    }
+
+    function moveButton() {
+        const button = document.getElementById("noButton");
+
+        const maxX = window.innerWidth - button.offsetWidth;
+        const maxY = window.innerHeight - button.offsetHeight;
+
+        const x = Math.random() * maxX;
+        const y = Math.random() * maxY;
+
+        button.style.position = "fixed";
+        button.style.left = x + "px";
+        button.style.top = y + "px";
+    }
+</script>
