@@ -1,79 +1,106 @@
-body { margin: 0; min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+body {
+    margin: 0;
+    min-height: 100vh;
 
-font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-background: linear-gradient(135deg, #ffdce8, #fff5f8);
+    font-family: Arial, sans-serif;
 
-overflow: hidden;
+    background: linear-gradient(135deg, #ffdce8, #fff5f8);
+
+    overflow: hidden;
 }
-.container { text-align: center;
-background: rgba(255, 255, 255, 0.94);
 
-padding: 30px;
+.container {
+    text-align: center;
 
-border-radius: 30px;
+    background: rgba(255, 255, 255, 0.94);
 
-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 30px;
 
-position: relative;
-z-index: 2;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+    z-index: 2;
 }
-.header_text { color: #e75480;
-font-size: 34px;
 
-margin-bottom: 25px;
+.header_text {
+    color: #e75480;
+
+    font-size: 42px;
+
+    margin-bottom: 22px;
 }
-.video_container { width: 420px;
-max-width: 80vw;
 
-margin: 0 auto;
+.video_container {
+    width: 300px;
 
-border-radius: 25px;
+    max-width: 70vw;
 
-overflow: hidden;
+    margin: 0 auto;
 
-border: 5px solid #ffb6c9;
+    border-radius: 22px;
 
-box-shadow: 0 5px 25px rgba(231, 84, 128, 0.3);
+    overflow: hidden;
+
+    border: 5px solid #ffb6c9;
+
+    box-shadow: 0 5px 25px rgba(231, 84, 128, 0.3);
 }
-.video_container video { display: block;
-width: 100%;
-height: auto;
+
+.video_container video {
+    display: block;
+
+    width: 100%;
+    height: auto;
 }
-.love_text { color: #e75480;
-font-size: 24px;
 
-font-weight: bold;
+.love_text {
+    color: #e75480;
 
-margin-bottom: 8px;
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
 }
-.small_text { color: #777;
-font-size: 17px;
+
+.small_text {
+    color: #777;
+
+    font-size: 24px;
+
+    font-weight: bold;
 }
-.hearts { position: fixed;
-width: 100%;
-top: 0;
-left: 0;
 
-font-size: 28px;
+.hearts {
+    position: fixed;
 
-word-spacing: 35px;
+    width: 100%;
+    top: 0;
+    left: 0;
 
-animation: floatingHearts 5s linear infinite;
+    font-size: 28px;
 
-opacity: 0.5;
+    word-spacing: 35px;
 
-pointer-events: none;
+    animation: floatingHearts 5s linear infinite;
+
+    opacity: 0.5;
+
+    pointer-events: none;
 }
+
 @keyframes floatingHearts {
-0% {
-    transform: translateY(100vh);
-}
+    0% {
+        transform: translateY(100vh);
+    }
 
-100% {
-    transform: translateY(-100vh);
-}
+    100% {
+        transform: translateY(-100vh);
+    }
 }
